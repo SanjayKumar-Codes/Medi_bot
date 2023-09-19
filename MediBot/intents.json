@@ -1,655 +1,559 @@
 {
-  "intents": [
+    "intents": [
 
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
-      "responses": [
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "Fungal infection",
-      "patterns": [
-        "itching",
-        "skin_rash",
-        "nodal_skin_eruptions",
-        "dischromic_patches",
-        "itching",
-        "skin_rash",
-        "nodal_skin_eruptions",
-        "dischromic_patches",
-        "itching",
-        "skin_rash",
-        "nodal_skin_eruptions",
-        "dischromic_patches",
-        "itching",
-        "skin_rash",
-        "nodal_skin_eruptions",
-        "dischromic_patches"
-      ],
-      "responses": [
-        "You have Fungal infection. Fungal infection is a common skin condition characterized by itching, skin rash, nodal skin eruptions, and dischromic patches.",
-        "Recommended actions:\n1. Keep the affected area clean and dry.\n2. Use antifungal creams or ointments as prescribed by a doctor.\n3. Avoid tight clothing that can trap moisture.\n4. Practice good personal hygiene."
-
-      ]
-    },
-
-    {
-      "tag": "Allergy",
-      "patterns": [
-        "continuous_sneezing",
-        "shivering",
-        "chills",
-        "watering_from_eyes",
-        "continuous_sneezing",
-        "shivering",
-        "chills",
-        "watering_from_eyes",
-        "continuous_sneezing",
-        "shivering",
-        "chills",
-        "watering_from_eyes",
-        "continuous_sneezing",
-        "shivering",
-        "chills",
-        "watering_from_eyes"
-      ],
-      "responses": [
-        "You have Allergy. Allergy is a hypersensitivity disorder of the immune system. Common symptoms include continuous sneezing, shivering, chills, and watering from the eyes.",
-        "To manage Allergy, consider the following: \n1. Identify and avoid allergens that trigger your symptoms.\n2. Use antihistamines or decongestants as recommended by a doctor.\n3. Keep your living space clean and dust-free.\n4. Consult with an allergist for further evaluation and treatment options."
-      ]
-    },
-    {
-      "tag": "GERD",
-      "patterns": [
-        "stomach_pain",
-        "acidity",
-        "ulcers_on_tongue",
-        "vomiting",
-        "cough",
-        "chest_pain"
-      ],
-      "responses": [
-        "You have GERD (Gastroesophageal Reflux Disease). GERD is a digestive disorder characterized by stomach pain, acidity, ulcers on the tongue, vomiting, cough, and chest pain.",
-        "To manage GERD, consider the following: \n1. Avoid spicy and acidic foods. \n2. Eat smaller, more frequent meals. \n 3. Elevate the head of your bed for better sleep. \n 4. Consult with a gastroenterologist for treatment options."
-      ]
-    },
-    {
-      "tag": "Chronic cholestasis",
-      "patterns": [
-        "itching",
-        "vomiting",
-        "yellowish_skin",
-        "nausea",
-        "loss_of_appetite",
-        "abdominal_pain",
-        "yellowing_of_eyes"
-      ],
-      "responses": [
-        "You have Chronic cholestasis. Chronic cholestasis is a condition that affects the liver and bile ducts, leading to symptoms such as itching, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, and yellowing of the eyes.",
-        "To manage Chronic cholestasis, consider the following:  \n1. Follow a low-fat diet.\n2. Stay hydrated and avoid alcohol. \n3. Medications may be prescribed by a hepatologist to manage symptoms. \n4. Regular check-ups and monitoring are essential for this condition."
-      ]
-    },
-    {
-      "tag": "Drug Reaction",
-      "patterns": [
-        "itching",
-        "skin_rash",
-        "stomach_pain",
-        "burning_micturition",
-        "spotting_urination"
-      ],
-      "responses": [
-        "You have Drug Reaction. Drug reactions can manifest with symptoms like itching, skin rash, stomach pain, burning micturition, and spotting urination.",
-        "If you suspect a drug reaction, consult your healthcare provider immediately for evaluation and appropriate steps."
-      ]
-    },
-    {
-      "tag": "Peptic ulcer disease",
-      "patterns": [
-        "vomiting",
-        "loss_of_appetite",
-        "abdominal_pain",
-        "passage_of_gases",
-        "internal_itching",
-        "indigestion"
-      ],
-      "responses": [
-        "You have Peptic ulcer disease. Symptoms of peptic ulcer disease may include vomiting, loss of appetite, abdominal pain, passage of gases, internal itching, and indigestion.",
-        "For the management of peptic ulcer disease, consult a gastroenterologist for diagnosis and treatment options."
-      ]
-    },
-    {
-      "tag": "AIDS",
-      "patterns": [
-        "muscle_wasting",
-        "patches_in_throat",
-        "high_fever",
-        "extra_marital_contacts"
-      ],
-      "responses": [
-        "You have AIDS (Acquired Immunodeficiency Syndrome). AIDS may present with symptoms such as muscle wasting, patches in the throat, high fever, and a history of extra-marital contacts.",
-        "AIDS is a serious condition, and it is crucial to seek medical attention immediately for diagnosis, treatment, and counseling."
-      ]
-    },
-    {
-      "tag": "Diabetes",
-      "patterns": [
-        "fatigue",
-        "weight_loss",
-        "restlessness",
-        "lethargy",
-        "irregular_sugar_level",
-        "blurred_and_distorted_vision",
-        "obesity",
-        "excessive_hunger",
-        "increased_appetite",
-        "polyuria"
-      ],
-      "responses": [
-        "You have Diabetes. Diabetes is a metabolic disorder characterized by symptoms like fatigue, weight loss, restlessness, lethargy, irregular sugar levels, blurred and distorted vision, obesity, excessive hunger, increased appetite, and polyuria (excessive urination).",
-        "Managing diabetes involves maintaining a healthy lifestyle, monitoring blood sugar levels, and adhering to a prescribed treatment plan."
-      ]
-    },
-    {
-      "tag": "Gastroenteritis",
-      "patterns": [
-        "vomiting",
-        "sunken_eyes",
-        "dehydration",
-        "diarrhoea"
-      ],
-      "responses": [
-        "You have Gastroenteritis. Gastroenteritis is an inflammation of the stomach and intestines, often causing symptoms such as vomiting, sunken eyes, dehydration, and diarrhea.",
-        "Treatment for gastroenteritis includes staying hydrated and, in severe cases, seeking medical attention for rehydration therapy."
-      ]
-    },
-    {
-      "tag": "Bronchial Asthma",
-      "patterns": [
-        "fatigue",
-        "cough",
-        "high_fever",
-        "breathlessness",
-        "family_history",
-        "mucoid_sputum"
-      ],
-      "responses": [
-        "You have Bronchial Asthma. Bronchial asthma is a chronic respiratory condition with symptoms like fatigue, cough, high fever, breathlessness, a family history of asthma, and mucoid sputum production.",
-        "Managing bronchial asthma involves avoiding triggers, taking prescribed medications, and having an asthma action plan."
-      ]
-    },
-    {
-      "tag": "Hypertension",
-      "patterns": [
-        "headache",
-        "chest_pain",
-        "dizziness",
-        "loss_of_balance",
-        "lack_of_concentration"
-      ],
-      "responses": [
-        "You have Hypertension (High Blood Pressure). Hypertension may present with symptoms like headache, chest pain, dizziness, loss of balance, and lack of concentration.",
-        "Managing hypertension involves lifestyle modifications and medication prescribed by a healthcare professional."
-      ]
-    },
-    {
-      "tag": "Migraine",
-      "patterns": [
-        "acidity",
-        "indigestion",
-        "headache",
-        "blurred_and_distorted_vision",
-        "excessive_hunger",
-        "stiff_neck",
-        "depression",
-        "irritability",
-        "visual_disturbances"
-      ],
-      "responses": [
-        "You have Migraine. Migraine is a neurological disorder characterized by symptoms like acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, and visual disturbances.",
-        "Managing migraines often involves identifying triggers, lifestyle adjustments, and medications prescribed by a healthcare provider."
-      ]
-    },
-    {
-      "tag": "Cervical spondylosis",
-      "patterns": [
-        "back_pain",
-        "weakness_in_limbs",
-        "neck_pain",
-        "dizziness",
-        "loss_of_balance"
-      ],
-      "responses": [
-        "You have Cervical spondylosis. Cervical spondylosis is a condition affecting the neck and spine, leading to symptoms like back pain, weakness in limbs, neck pain, dizziness, and loss of balance.",
-        "Treatment for cervical spondylosis may include physical therapy, pain management, and in some cases, surgery."
-      ]
-    },
-    {
-      "tag": "Paralysis (brain hemorrhage)",
-      "patterns": [
-        "vomiting",
-        "headache",
-        "weakness_of_one_body_side",
-        "altered_sensorium"
-      ],
-      "responses": [
-        "You have Paralysis due to Brain Hemorrhage. Brain hemorrhage may manifest with symptoms like vomiting, headache, weakness on one side of the body, and altered sensorium.",
-        "Immediate medical attention and interventions are crucial for managing brain hemorrhage-related paralysis."
-      ]
-    },
-  {
-    "tag": "Jaundice",
-    "patterns": [
-      "itching",
-      "vomiting",
-      "fatigue",
-      "weight_loss",
-      "high_fever",
-      "yellowish_skin",
-      "dark_urine",
-      "abdominal_pain"
-    ],
-    "responses": [
-      "You have Jaundice. Jaundice is a disease characterized by yellowing of the skin and eyes. It can be caused by various factors such as liver problems or infections. Here are four points to cure Jaundice:\n1. Get plenty of rest.\n2. Stay hydrated.\n3. Avoid alcohol and fatty foods.\n4. Consult a healthcare professional for further evaluation and treatment."
-    ]
-  },
-  {
-    "tag": "Malaria",
-    "patterns": [
-      "chills",
-      "vomiting",
-      "high_fever",
-      "sweating",
-      "headache",
-      "nausea",
-      "muscle_pain",
-      "diarrhoea"
-    ],
-    "responses": [
-      "You have Malaria. Malaria is a mosquito-borne disease that can cause high fever and other symptoms. Here are four points to cure Malaria:\n1. Take antimalarial medications as prescribed by a doctor.\n2. Get plenty of rest.\n3. Stay hydrated.\n4. Use mosquito nets and repellents to prevent further mosquito bites."
-    ]
-  },
-  {
-    "tag": "Chicken pox",
-    "patterns": [
-      "itching",
-      "skin_rash",
-      "fatigue",
-      "lethargy",
-      "high_fever",
-      "headache",
-      "loss_of_appetite",
-      "mild_fever",
-      "swelled_lymph_nodes",
-      "malaise",
-      "red_spots_over_body"
-    ],
-    "responses": [
-      "You have Chicken pox. Chicken pox is a highly contagious viral infection that causes an itchy rash and flu-like symptoms. Here are four points to cure Chicken pox:\n1. Get plenty of rest.\n2. Keep the affected areas clean and avoid scratching.\n3. Take over-the-counter pain relievers to reduce fever and discomfort.\n4. Isolate yourself to prevent spreading the virus to others."
-    ]
-  },
-  {
-    "tag": "Dengue",
-    "patterns": [
-      "skin_rash",
-      "chills",
-      "joint_pain",
-      "vomiting",
-      "fatigue",
-      "high_fever",
-      "headache",
-      "nausea",
-      "loss_of_appetite",
-      "pain_behind_the_eyes",
-      "back_pain",
-      "malaise",
-      "muscle_pain",
-      "red_spots_over_body"
-    ],
-    "responses": [
-      "You have Dengue. Dengue is a mosquito-borne viral infection that can cause severe flu-like symptoms. Here are four points to cure Dengue:\n1. Stay hydrated by drinking plenty of fluids.\n2. Get plenty of rest.\n3. Monitor your platelet count and seek medical attention if it drops significantly.\n4. Use mosquito nets and repellents to prevent further mosquito bites."
-    ]
-  },
-  {
-    "tag": "Typhoid",
-    "patterns": [
-      "chills",
-      "vomiting",
-      "fatigue",
-      "high_fever",
-      "nausea",
-      "constipation",
-      "abdominal_pain",
-      "diarrhoea",
-      "toxic_look_(typhos)",
-      "belly_pain"
-    ],
-    "responses": [
-      "You have Typhoid. Typhoid is a bacterial infection that can cause high fever and gastrointestinal symptoms. Here are four points to cure Typhoid:\n1. Take antibiotics as prescribed by a doctor.\n2. Stay hydrated and eat a bland diet.\n3. Practice good hygiene and wash your hands frequently.\n4. Rest and avoid strenuous activities."
-    ]
-  },
-  {
-    "tag": "Hepatitis A",
-    "patterns": [
-      "joint_pain",
-      "vomiting",
-      "yellowish_skin",
-      "dark_urine",
-      "nausea",
-      "loss_of_appetite",
-      "abdominal_pain",
-      "diarrhoea",
-      "mild_fever",
-      "yellowing_of_eyes",
-      "muscle_pain"
-    ],
-    "responses": [
-      "You have Hepatitis A. Hepatitis A is a viral infection that affects the liver and can cause jaundice. Here are four points to cure Hepatitis A:\n1. Get plenty of rest.\n2. Stay hydrated and eat a balanced diet.\n3. Avoid alcohol and liver-damaging substances.\n4. Consult a healthcare professional for further evaluation and treatment."
-    ]
-  },
-  {
-    "tag": "Hepatitis B",
-    "patterns": [
-      "itching",
-      "fatigue",
-      "lethargy",
-      "yellowish_skin",
-      "dark_urine",
-      "loss_of_appetite",
-      "abdominal_pain",
-      "yellow_urine",
-      "yellowing_of_eyes",
-      "malaise",
-      "receiving_blood_transfusion",
-      "receiving_unsterile_injections"
-    ],
-    "responses": [
-      "You have Hepatitis B. Hepatitis B is a viral infection that affects the liver and can lead to chronic liver disease. Here are four points to cure Hepatitis B:\n1. Consult a healthcare professional for antiviral treatment.\n2. Get vaccinated to prevent future infections.\n3. Practice safe sex and avoid sharing needles or personal items that may spread the virus.\n4. Limit alcohol consumption and maintain a healthy lifestyle."
-    ]
-  },
-  {
-    "tag": "Hepatitis C",
-    "patterns": [
-      "fatigue",
-      "yellowish_skin",
-      "nausea",
-      "loss_of_appetite",
-      "family_history"
-    ],
-    "responses": [
-      "You have Hepatitis C. Hepatitis C is a viral infection that affects the liver and can lead to chronic liver disease. Here are four points to cure Hepatitis C:\n1. Consult a healthcare professional for antiviral treatment.\n2. Avoid alcohol and liver-damaging substances.\n3. Practice safe sex and avoid sharing needles or personal items that may spread the virus.\n4. Regularly monitor liver function and follow medical advice."
-    ]
-  },
-  {
-    "tag": "Hepatitis D",
-    "patterns": [
-      "joint_pain",
-      "vomiting",
-      "fatigue",
-      "yellowish_skin",
-      "dark_urine",
-      "nausea",
-      "loss_of_appetite",
-      "abdominal_pain",
-      "yellowing_of_eyes"
-    ],
-    "responses": [
-      "You have Hepatitis D. Hepatitis D is a viral infection that affects the liver and can worsen the symptoms of Hepatitis B. Here are four points to cure Hepatitis D:\n1. Consult a healthcare professional for antiviral treatment.\n2. Get vaccinated for Hepatitis B to prevent further infection.\n3. Avoid alcohol and liver-damaging substances.\n4. Follow medical advice and regular check-ups."
-    ]
-  },
-  {
-    "tag": "Hepatitis E",
-    "patterns": [
-      "joint_pain",
-      "vomiting",
-      "fatigue",
-      "high_fever",
-      "yellowish_skin",
-      "dark_urine",
-      "nausea",
-      "loss_of_appetite",
-      "abdominal_pain",
-      "yellowing_of_eyes",
-      "coma",
-      "stomach_bleeding"
-    ],
-    "responses": [
-      "You have Hepatitis E. Hepatitis E is a viral infection that affects the liver and can cause severe symptoms. Here are four points to cure Hepatitis E:\n1. Seek immediate medical attention if symptoms are severe.\n2. Get plenty of rest and stay hydrated.\n3. Follow medical advice and treatment recommendations.\n4. Practice good hygiene to prevent further spread of the virus."
-    ]
-  },
-    {
-      "tag": "Alcoholic hepatitis",
-      "patterns": [
-        "vomiting",
-        "yellowish_skin",
-        "abdominal_pain",
-        "swelling_of_stomach",
-        "distention_of_abdomen",
-        "history_of_alcohol_consumption",
-        "fluid_overload"
-      ],
-      "responses": [
-        "You have Alcoholic hepatitis. This is a disease caused by excessive alcohol consumption.",
-        "Recommended actions:\n1. Stop consuming alcohol.\n2. Seek medical attention immediately.\n3. Rest and hydrate.\n4. Follow your doctor's advice."
-      ]
-    },
-    {
-      "tag": "Tuberculosis",
-      "patterns": [
-        "chills",
-        "vomiting",
-        "fatigue",
-        "weight_loss",
-        "cough",
-        "high_fever",
-        "breathlessness",
-        "sweating",
-        "loss_of_appetite",
-        "mild_fever",
-        "yellowing_of_eyes",
-        "swelled_lymph_nodes",
-        "malaise",
-        "phlegm",
-        "chest_pain",
-        "blood_in_sputum"
-      ],
-      "responses": [
-        "You have Tuberculosis. This is a bacterial infection that affects the lungs.",
-        "Recommended actions:\n1. Seek immediate medical attention.\n2. Follow your doctor's treatment plan.\n3. Rest and maintain good hygiene.\n4. Isolate yourself to prevent the spread of the disease."
-      ]
-    },
-    {
-      "tag": "Common Cold",
-      "patterns": [
-        "continuous_sneezing",
-        "chills",
-        "fatigue",
-        "cough",
-        "high_fever",
-        "headache",
-        "swelled_lymph_nodes",
-        "malaise",
-        "phlegm",
-        "throat_irritation",
-        "redness_of_eyes",
-        "sinus_pressure",
-        "runny_nose",
-        "congestion",
-        "chest_pain",
-        "loss_of_smell",
-        "muscle_pain"
-      ],
-      "responses": [
-        "You have Common Cold. This is a viral infection affecting the upper respiratory system.",
-        "Recommended actions:\n1. Get plenty of rest and stay hydrated.\n2. Take over-the-counter cold medications.\n3. Use a humidifier for congestion.\n4. If symptoms worsen, consult a doctor."
-      ]
-    },
-    {
-      "tag": "Pneumonia",
-      "patterns": [
-        "chills",
-        "fatigue",
-        "cough",
-        "high_fever",
-        "breathlessness",
-        "sweating",
-        "malaise",
-        "chest_pain",
-        "fast_heart_rate",
-        "rusty_sputum"
-      ],
-      "responses": [
-        "You have Pneumonia. This is a bacterial or viral infection of the lungs.",
-        "Recommended actions:\n1. Seek immediate medical attention.\n2. Follow your doctor's prescribed antibiotics or treatments.\n3. Get plenty of rest and stay hydrated.\n4. Avoid smoking and maintain good hygiene."
-      ]
-    },
-    {
-      "tag": "Dimorphic hemmorhoids(piles)",
-      "patterns": [
-        "constipation",
-        "pain_during_bowel_movements",
-        "pain_in_anal_region",
-        "bloody_stool",
-        "irritation_in_anus"
-      ],
-      "responses": [
-        "You have Dimorphic hemmorhoids(piles). This is a condition affecting the rectal area.",
-        "Recommended actions:\n1. Maintain a high-fiber diet to avoid constipation.\n2. Keep the anal area clean and dry.\n3. Use over-the-counter creams for relief.\n4. Consult a doctor for severe cases or bleeding."
-      ]
-    },
         {
-          "tag": "Heart attack",
-          "patterns": [
-            "vomiting",
-            "breathlessness",
-            "sweating",
-            "chest_pain"
-          ],
-          "responses": [
-            "You have Heart attack. This is a life-threatening condition where blood flow to the heart is blocked.",
-            "Recommended actions:\n1. Call 911 or seek emergency medical help immediately.\n2. Chew aspirin if available.\n3. Stay calm and try to rest.\n4. Do not drive yourself to the hospital."
-          ]
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help?"
+            ]
+            },
+            {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+            },
+            {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"]
         },
         {
-          "tag": "Varicose veins",
-          "patterns": [
-            "fatigue",
-            "cramps",
-            "bruising",
-            "obesity",
-            "swollen_legs",
-            "swollen_blood_vessels",
-            "prominent_veins_on_calf"
-          ],
-          "responses": [
-            "You have Varicose veins. This is a condition where veins become enlarged and twisted, usually in the legs.",
-            "Recommended actions:\n1. Elevate your legs to reduce swelling.\n2. Wear compression stockings.\n3. Exercise regularly to improve blood circulation.\n4. Consult a doctor for possible medical treatments."
-          ]
+            "tag": "Fungal infection",
+            "patterns": [
+                "dischromic patches, nodal skin eruptions, skin rash, itching"
+            ],
+            "responses": "You have Fungal infection. Fungal infection is a common skin condition characterized by itching, skin rash, nodal skin eruptions, and dischromic patches.<br> Recommended actions:<br> 1. Keep the affected area clean and dry.<br> 2. Use antifungal creams or ointments as prescribed by a doctor.<br> 3. Avoid tight clothing that can trap moisture.<br> 4. Practice good personal hygiene."
         },
         {
-          "tag": "Hypothyroidism",
-          "patterns": [
-            "fatigue",
-            "weight_gain",
-            "cold_hands_and_feets",
-            "mood_swings",
-            "lethargy",
-            "dizziness",
-            "puffy_face_and_eyes",
-            "enlarged_thyroid",
-            "brittle_nails",
-            "swollen_extremeties",
-            "depression",
-            "irritability",
-            "abnormal_menstruation"
-          ],
-          "responses": [
-            "You have Hypothyroidism. This is a condition where the thyroid gland does not produce enough thyroid hormones.",
-            "Recommended actions:\n1. Take thyroid medication as prescribed by your doctor.\n2. Maintain a balanced diet.\n3. Exercise regularly to boost metabolism.\n4. Manage stress and get regular check-ups."
-          ]
+            "tag": "Allergies",
+            "patterns": [
+                "sneezing, itchy eyes, runny nose, skin rash"
+            ],
+            "responses": "You might be experiencing allergies. Allergies are immune system reactions to allergens in the environment.<br>Recommended actions:<br>1. Identify and avoid allergens if possible.<br>2. Over-the-counter antihistamines may help relieve symptoms.<br>3. Consult an allergist for a comprehensive evaluation and treatment plan."
         },
         {
-          "tag": "Hyperthyroidism",
-          "patterns": [
-            "fatigue",
-            "mood_swings",
-            "weight_loss",
-            "restlessness",
-            "sweating",
-            "diarrhoea",
-            "fast_heart_rate",
-            "excessive_hunger",
-            "muscle_weakness",
-            "irritability",
-            "abnormal_menstruation"
-          ],
-          "responses": [
-            "You have Hyperthyroidism. This is a condition where the thyroid gland produces too much thyroid hormone.",
-            "Recommended actions:\n1. Consult an endocrinologist for treatment options.\n2. Medication, radioactive iodine, or surgery may be recommended.\n3. Monitor your thyroid levels regularly.\n4. Maintain a healthy lifestyle."
-          ]
+            "tag": "Asthma",
+            "patterns": [
+                "shortness of breath, wheezing, cough, chest tightness"
+            ],
+            "responses": "You may have asthma. Asthma is a chronic respiratory condition that can cause breathing difficulties.<br>Recommended actions:<br>1. Use prescribed inhalers or medications as directed.<br>2. Avoid triggers that worsen symptoms (e.g., smoke, allergens).<br>3. Consult a healthcare professional for asthma management and education."
         },
         {
-          "tag": "Hypoglycemia",
-          "patterns": [
-            "vomiting",
-            "fatigue",
-            "anxiety",
-            "sweating",
-            "headache",
-            "nausea",
-            "blurred_and_distorted_vision",
-            "excessive_hunger",
-            "drying_and_tingling_lips",
-            "slurred_speech",
-            "irritability",
-            "palpitations"
-          ],
-          "responses": [
-            "You have Hypoglycemia. This is a condition characterized by low blood sugar levels.",
-            "Recommended actions:\n1. Consume fast-acting carbohydrates like glucose tablets or juice.\n2. Follow a balanced diet with regular meals and snacks.\n3. Carry a medical ID indicating hypoglycemia.\n4. Consult a healthcare provider for diabetes management if necessary."
-          ]
+            "tag": "Rheumatoid Arthritis",
+            "patterns": [
+                "joint pain, joint stiffness, swelling, fatigue"
+            ],
+            "responses": "You may have Rheumatoid Arthritis. It's an autoimmune disease that affects the joints.<br>Recommended actions:<br>1. Consult a rheumatologist for diagnosis and treatment.<br>2. Medications and physical therapy may help manage symptoms.<br>3. Maintain a healthy lifestyle with regular exercise."
         },
         {
-          "tag": "Osteoarthristis",
-          "patterns": [
-            "joint_pain",
-            "neck_pain",
-            "knee_pain",
-            "hip_joint_pain",
-            "swelling_joints",
-            "painful_walking"
-          ],
-          "responses": [
-            "You have Osteoarthristis. This is a degenerative joint disease that affects cartilage and bone.",
-            "Recommended actions:\n1. Manage pain with medication or physical therapy.\n2. Maintain a healthy weight to reduce stress on joints.\n3. Stay active with low-impact exercises.\n4. Consider joint injections or surgery in severe cases."
-          ]
+            "tag": "HIV/AIDS",
+            "patterns": [
+                "fatigue, weight loss, night sweats, recurrent infections"
+            ],
+            "responses": "You might be at risk for HIV/AIDS. It's a viral infection that affects the immune system.<br>Recommended actions:<br>1. Get tested for HIV and consult an infectious disease specialist.<br>2. Early diagnosis and antiretroviral therapy can help manage the condition.<br>3. Practice safe sex and take preventive measures."
+        },
+        {
+            "tag": "Ovarian Cancer",
+            "patterns": [
+                "abdominal pain, bloating, urinary frequency, fatigue"
+            ],
+            "responses": "You may have Ovarian Cancer. It's a type of cancer that affects the ovaries.<br>Recommended actions:<br>1. Consult an oncologist for diagnosis and treatment options.<br>2. Surgery, chemotherapy, and radiation therapy are common treatments.<br>3. Early detection is crucial for better outcomes."
+        },
+        {
+            "tag": "Pneumothorax",
+            "patterns": [
+                "sudden chest pain, shortness of breath, chest tightness"
+            ],
+            "responses": "You might be experiencing Pneumothorax. It's a condition where air leaks into the space between the lung and the chest wall.<br>Recommended actions:<br>1. Seek immediate medical attention, as it can be a medical emergency.<br>2. Treatment may involve chest tube insertion to remove air and reinflate the lung."
+        },
+        {
+            "tag": "Gout",
+            "patterns": [
+                "sudden and severe joint pain, swelling, redness"
+            ],
+            "responses": "You may have Gout. It's a type of arthritis caused by the buildup of uric acid crystals in the joints.<br>Recommended actions:<br>1. Consult a rheumatologist for diagnosis and treatment.<br>2. Medications and dietary changes can help manage symptoms and prevent flare-ups."
+        },
+        {
+            "tag": "Chronic Fatigue Syndrome",
+            "patterns": [
+                "persistent fatigue, muscle pain, cognitive difficulties"
+            ],
+            "responses": "You may be experiencing Chronic Fatigue Syndrome (CFS). It's a complex disorder characterized by long-term, unexplained fatigue.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and management.<br>2. Treatment may involve lifestyle changes, pacing, and symptom management."
+        },
+        {
+            "tag": "Hypertension",
+            "patterns": [
+                "high blood pressure, headache, dizziness, chest pain"
+            ],
+            "responses": "You may have Hypertension (High Blood Pressure). It's a common condition where the force of blood against the artery walls is too high.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and management.<br>2. Lifestyle changes, such as a healthy diet and regular exercise, can help control blood pressure."
+        },
+        {
+            "tag": "Type 2 Diabetes",
+            "patterns": [
+                "excessive thirst, frequent urination, fatigue, blurred vision"
+            ],
+            "responses": "You might have Type 2 Diabetes. It's a chronic condition that affects how your body processes glucose (sugar).<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and treatment.<br>2. Managing blood sugar through diet, exercise, and medications is essential."
+        },
+        {
+            "tag": "Osteoarthritis",
+            "patterns": [
+                "joint pain, stiffness, reduced range of motion"
+            ],
+            "responses": "You may have Osteoarthritis. It's a degenerative joint disease that can cause pain and stiffness in the joints.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and treatment options.<br>2. Physical therapy, pain management, and lifestyle changes can help manage symptoms."
+        },
+        {
+            "tag": "Migraine",
+            "patterns": [
+                "severe headache, nausea, sensitivity to light and sound"
+            ],
+            "responses": "You might be experiencing a Migraine. It's a neurological condition characterized by intense, throbbing headaches.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and treatment.<br>2. Medications and lifestyle adjustments can help prevent and manage migraine attacks."
+        },
+        {
+            "tag": "GERD",
+            "patterns": [
+                "heartburn, regurgitation, chest pain, acid reflux"
+            ],
+            "responses": "You may have GERD (Gastroesophageal Reflux Disease). It's a digestive disorder where stomach acid flows back into the esophagus.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and treatment.<br>2. Lifestyle changes, medications, and dietary adjustments can alleviate symptoms."
+        },
+        {
+            "tag": "Urinary Tract Infection (UTI)",
+            "patterns": [
+                "painful urination, frequent urination, cloudy urine, abdominal pain"
+            ],
+            "responses": "You may have a Urinary Tract Infection (UTI). It's a bacterial infection that affects the urinary system.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and treatment.<br>2. Antibiotics are commonly prescribed to treat UTIs.<br>3. Drink plenty of water and practice good hygiene to prevent future infections."
+        },
+        {
+            "tag": "Depression",
+            "patterns": [
+                "persistent sadness, loss of interest, fatigue, changes in sleep patterns"
+            ],
+            "responses": "You might be experiencing Depression. It's a mood disorder characterized by persistent feelings of sadness and a loss of interest in activities.<br>Recommended actions:<br>1. Consult a mental health professional for diagnosis and treatment options.<br>2. Psychotherapy and medications can help manage depressive symptoms."
+        },
+        {
+            "tag": "Anxiety",
+            "patterns": [
+                "excessive worry, restlessness, palpitations, muscle tension"
+            ],
+            "responses": "You may have Anxiety. It's a common mental health condition characterized by excessive worry and heightened stress.<br>Recommended actions:<br>1. Consult a mental health professional for evaluation and treatment.<br>2. Therapy, lifestyle changes, and medications can help manage anxiety symptoms."
+        },
+        {
+            "tag": "Hepatitis C",
+            "patterns": [
+                "fatigue, jaundice, abdominal pain, dark urine"
+            ],
+            "responses": "You may have Hepatitis C. It's a viral infection that affects the liver.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and treatment.<br>2. Antiviral medications can be prescribed to manage Hepatitis C.<br>3. Avoid alcohol and follow a liver-healthy diet."
+        },
+        {
+            "tag": "Ovarian Cyst",
+            "patterns": [
+                "pelvic pain, bloating, irregular menstruation"
+            ],
+            "responses": "You might have an Ovarian Cyst. It's a fluid-filled sac that can form on or within the ovaries.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and treatment options.<br>2. Treatment may involve observation, medication, or surgery depending on the size and symptoms of the cyst."
+        },
+        {
+            "tag": "COPD",
+            "patterns": [
+                "shortness of breath, chronic cough, wheezing, chest tightness"
+            ],
+            "responses": "You may have Chronic Obstructive Pulmonary Disease (COPD). It's a progressive lung disease that can cause breathing difficulties.<br>Recommended actions:<br>1. Consult a healthcare professional for diagnosis and management.<br>2. Medications, pulmonary rehabilitation, and lifestyle changes can help manage COPD symptoms."
+        },
+        {
+            "tag": "Allergy",
+            "patterns": [
+                "continuous sneezing, watering from eyes, chills, shivering"
+            ],
+            "responses": "You have Allergy. Allergy is a hypersensitivity disorder of the immune system. Common symptoms include continuous sneezing, shivering, chills, and watering from the eyes.<br>To manage Allergy, consider the following: <br>1. Identify and avoid allergens that trigger your symptoms.<br>2. Use antihistamines or decongestants as recommended by a doctor.<br>3. Keep your living space clean and dust-free.<br>4. Consult with an allergist for further evaluation and treatment options."
+        },
+        {
+            "tag": "Chronic cholestasis",
+            "patterns": [
+                "loss of appetite, itching, abdominal pain, yellowish skin, vomiting, nausea, yellowing of eyes"
+            ],
+            "responses": "You have Chronic cholestasis. Chronic cholestasis is a condition that affects the liver and bile ducts, leading to symptoms such as itching, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, and yellowing of the eyes.<br>To manage Chronic cholestasis, consider the following:  <br>1. Follow a low-fat diet.<br>2. Stay hydrated and avoid alcohol. <br>3. Medications may be prescribed by a hepatologist to manage symptoms. <br>4. Regular check-ups and monitoring are essential for this condition."
+        },
+        {
+            "tag": "Drug Reaction",
+            "patterns": [
+                "stomach pain, skin rash, itching, burning micturition, spotting urination"
+            ],
+            "responses": "You have Drug Reaction. Drug reactions can manifest with symptoms like itching, skin rash, stomach pain, burning micturition, and spotting urination.<br>If you suspect a drug reaction, consult your healthcare provider immediately for evaluation and appropriate steps."
+        },
+        {
+            "tag": "Peptic ulcer disease",
+            "patterns": [
+                "loss of appetite, passage of gases, abdominal pain, vomiting, indigestion, internal itching"
+            ],
+            "responses": "You have Peptic ulcer disease. Symptoms of peptic ulcer disease may include vomiting, loss of appetite, abdominal pain, passage of gases, internal itching, and indigestion.<br>For the management of peptic ulcer disease, consult a gastroenterologist for diagnosis and treatment options."
+        },
+        {
+            "tag": "AIDS",
+            "patterns": [
+                "patches in throat, extra marital contacts, high fever, muscle wasting"
+            ],
+            "responses": "You have AIDS (Acquired Immunodeficiency Syndrome). AIDS may present with symptoms such as muscle wasting, patches in the throat, high fever, and a history of extra-marital contacts.<br>AIDS is a serious condition, and it is crucial to seek medical attention immediately for diagnosis, treatment, and counseling."
+        },
+        {
+            "tag": "Diabetes",
+            "patterns": [
+                "irregular sugar level, fatigue, increased appetite, restlessness, weight loss, polyuria, blurred and distorted vision, lethargy, obesity, excessive hunger"
+            ],
+            "responses": "You have Diabetes. Diabetes is a metabolic disorder characterized by symptoms like fatigue, weight loss, restlessness, lethargy, irregular sugar levels, blurred and distorted vision, obesity, excessive hunger, increased appetite, and polyuria (excessive urination).<br>Managing diabetes involves maintaining a healthy lifestyle, monitoring blood sugar levels, and adhering to a prescribed treatment plan."
+        },
+        {
+            "tag": "Gastroenteritis",
+            "patterns": [
+                "diarrhoea, dehydration, sunken eyes, vomiting"
+            ],
+            "responses": "You have Gastroenteritis. Gastroenteritis is an inflammation of the stomach and intestines, often causing symptoms such as vomiting, sunken eyes, dehydration, and diarrhea.<br>Treatment for gastroenteritis includes staying hydrated and, in severe cases, seeking medical attention for rehydration therapy."
+        },
+        {
+            "tag": "Bronchial Asthma",
+            "patterns": [
+                "cough, fatigue, high fever, family history, mucoid sputum, breathlessness"
+            ],
+            "responses": "You have Bronchial Asthma. Bronchial asthma is a chronic respiratory condition with symptoms like fatigue, cough, high fever, breathlessness, a family history of asthma, and mucoid sputum production.<br>Managing bronchial asthma involves avoiding triggers, taking prescribed medications, and having an asthma action plan."
+        },
+        {
+            "tag": "Cervical spondylosis",
+            "patterns": [
+                "dizziness, back pain, weakness in limbs, loss of balance, neck pain"
+            ],
+            "responses": "You have Cervical spondylosis. Cervical spondylosis is a condition affecting the neck and spine, leading to symptoms like back pain, weakness in limbs, neck pain, dizziness, and loss of balance.<br>Treatment for cervical spondylosis may include physical therapy, pain management, and in some cases, surgery."
+        },
+        {
+            "tag": "Paralysis (brain hemorrhage)",
+            "patterns": [
+                "headache, altered sensorium, weakness of one body side, vomiting"
+            ],
+            "responses": "You have Paralysis due to Brain Hemorrhage. Brain hemorrhage may manifest with symptoms like vomiting, headache, weakness on one side of the body, and altered sensorium.<br>Immediate medical attention and interventions are crucial for managing brain hemorrhage-related paralysis."
+        },
+        {
+            "tag": "Jaundice",
+            "patterns": [
+                "high fever, fatigue, weight loss, itching, abdominal pain, vomiting, yellowish skin, dark urine"
+            ],
+            "responses": "You have Jaundice. Jaundice is a disease characterized by yellowing of the skin and eyes. It can be caused by various factors such as liver problems or infections. Here are four points to cure Jaundice:<br>1. Get plenty of rest.<br>2. Stay hydrated.<br>3. Avoid alcohol and fatty foods.<br>4. Consult a healthcare professional for further evaluation and treatment."
+        },
+        {
+            "tag": "Malaria",
+            "patterns": [
+                "sweating, high fever, muscle pain, headache, diarrhoea, vomiting, chills, nausea"
+            ],
+            "responses": "You have Malaria. Malaria is a mosquito-borne disease that can cause high fever and other symptoms. Here are four points to cure Malaria:<br>1. Take antimalarial medications as prescribed by a doctor.<br>2. Get plenty of rest.<br>3. Stay hydrated.<br>4. Use mosquito nets and repellents to prevent further mosquito bites."
+        },
+        {
+            "tag": "Chicken pox",
+            "patterns": [
+                "red spots over body, high fever, fatigue, malaise, loss of appetite, headache, skin rash, itching, mild fever, swelled lymph nodes, lethargy"
+            ],
+            "responses": "You have Chicken pox. Chicken pox is a highly contagious viral infection that causes an itchy rash and flu-like symptoms. Here are four points to cure Chicken pox:<br>1. Get plenty of rest.<br>2. Keep the affected areas clean and avoid scratching.<br>3. Take over-the-counter pain relievers to reduce fever and discomfort.<br>4. Isolate yourself to prevent spreading the virus to others."
+        },
+        {
+            "tag": "Dengue",
+            "patterns": [
+                "red spots over body, high fever, fatigue, muscle pain, malaise, loss of appetite, headache, skin rash, vomiting, back pain, chills, nausea, joint pain, pain behind the eyes"
+            ],
+            "responses": "You have Dengue. Dengue is a mosquito-borne viral infection that can cause severe flu-like symptoms. Here are four points to cure Dengue:<br>1. Stay hydrated by drinking plenty of fluids.<br>2. Get plenty of rest.<br>3. Monitor your platelet count and seek medical attention if it drops significantly.<br>4. Use mosquito nets and repellents to prevent further mosquito bites."
+        },
+        {
+            "tag": "Typhoid",
+            "patterns": [
+                "high fever, fatigue, diarrhoea, abdominal pain, vomiting, toxic look (typhos), chills, nausea, belly pain, constipation"
+            ],
+            "responses": "You have Typhoid. Typhoid is a bacterial infection that can cause high fever and gastrointestinal symptoms. Here are four points to cure Typhoid:<br>1. Take antibiotics as prescribed by a doctor.<br>2. Stay hydrated and eat a bland diet.<br>3. Practice good hygiene and wash your hands frequently.<br>4. Rest and avoid strenuous activities."
+        },
+        {
+            "tag": "Hepatitis A",
+            "patterns": [
+                "muscle pain, loss of appetite, mild fever, diarrhoea, abdominal pain, vomiting, yellowish skin, nausea, joint pain, yellowing of eyes, dark urine"
+            ],
+            "responses": "You have Hepatitis A. Hepatitis A is a viral infection that affects the liver and can cause jaundice. Here are four points to cure Hepatitis A:<br>1. Get plenty of rest.<br>2. Stay hydrated and eat a balanced diet.<br>3. Avoid alcohol and liver-damaging substances.<br>4. Consult a healthcare professional for further evaluation and treatment."
+        },
+        {
+            "tag": "Hepatitis B",
+            "patterns": [
+                "fatigue, malaise, loss of appetite, receiving unsterile injections, itching, receiving blood transfusion, abdominal pain, yellowish skin, yellow urine, yellowing of eyes, lethargy, dark urine"
+            ],
+            "responses": "You have Hepatitis B. Hepatitis B is a viral infection that affects the liver and can lead to chronic liver disease. Here are four points to cure Hepatitis B:<br>1. Consult a healthcare professional for antiviral treatment.<br>2. Get vaccinated to prevent future infections.<br>3. Practice safe sex and avoid sharing needles or personal items that may spread the virus.<br>4. Limit alcohol consumption and maintain a healthy lifestyle."
+        },
+        {
+            "tag": "Hepatitis D",
+            "patterns": [
+                "fatigue, loss of appetite, abdominal pain, vomiting, yellowish skin, nausea, joint pain, yellowing of eyes, dark urine"
+            ],
+            "responses": "You have Hepatitis D. Hepatitis D is a viral infection that affects the liver and can worsen the symptoms of Hepatitis B. Here are four points to cure Hepatitis D:<br>1. Consult a healthcare professional for antiviral treatment.<br>2. Get vaccinated for Hepatitis B to prevent further infection.<br>3. Avoid alcohol and liver-damaging substances.<br>4. Follow medical advice and regular check-ups."
+        },
+        {
+            "tag": "Hepatitis E",
+            "patterns": [
+                "high fever, fatigue, loss of appetite, stomach bleeding, abdominal pain, vomiting, yellowish skin, coma, nausea, joint pain, yellowing of eyes, dark urine"
+            ],
+            "responses": "You have Hepatitis E. Hepatitis E is a viral infection that affects the liver and can cause severe symptoms. Here are four points to cure Hepatitis E:<br>1. Seek immediate medical attention if symptoms are severe.<br>2. Get plenty of rest and stay hydrated.<br>3. Follow medical advice and treatment recommendations.<br>4. Practice good hygiene to prevent further spread of the virus."
+        },
+        {
+            "tag": "Alcoholic hepatitis",
+            "patterns": [
+                "abdominal pain, yellowish skin, swelling of stomach, vomiting, history of alcohol consumption, distention of abdomen, fluid overload"
+            ],
+            "responses": "You have Alcoholic hepatitis. This is a disease caused by excessive alcohol consumption.<br>Recommended actions:<br>1. Stop consuming alcohol.<br>2. Seek medical attention immediately.<br>3. Rest and hydrate.<br>4. Follow your doctor's advice."
+        },
+        {
+            "tag": "Tuberculosis",
+            "patterns": [
+                "sweating, cough, fatigue, high fever, malaise, weight loss, loss of appetite, chest pain, mild fever, phlegm, vomiting, chills, swelled lymph nodes, breathlessness, yellowing of eyes, blood in sputum"
+            ],
+            "responses": "You have Tuberculosis. This is a bacterial infection that affects the lungs.<br>Recommended actions:<br>1. Seek immediate medical attention.<br>2. Follow your doctor's treatment plan.<br>3. Rest and maintain good hygiene.<br>4. Isolate yourself to prevent the spread of the disease."
+        },
+        {
+            "tag": "Common Cold",
+            "patterns": [
+                "loss of smell, cough, fatigue, high fever, malaise, runny nose, continuous sneezing, headache, congestion, redness of eyes, chest pain, phlegm, muscle pain, sinus pressure, chills, swelled lymph nodes, throat irritation"
+            ],
+            "responses": "You have Common Cold. This is a viral infection affecting the upper respiratory system.<br>Recommended actions:<br>1. Get plenty of rest and stay hydrated.<br>2. Take over-the-counter cold medications.<br>3. Use a humidifier for congestion.<br>4. If symptoms worsen, consult a doctor."
+        },
+        {
+            "tag": "Pneumonia",
+            "patterns": [
+                "sweating, cough, fatigue, high fever, malaise, fast heart rate, rusty sputum, chest pain, chills, breathlessness"
+            ],
+            "responses": "You have Pneumonia. This is a bacterial or viral infection of the lungs.<br>Recommended actions:<br>1. Seek immediate medical attention.<br>2. Follow your doctor's prescribed antibiotics or treatments.<br>3. Get plenty of rest and stay hydrated.<br>4. Avoid smoking and maintain good hygiene."
+        },
+        {
+            "tag": "Dimorphic hemmorhoids(piles)",
+            "patterns": [
+                "pain in anal region, irritation in anus, bloody stool, pain during bowel movements, constipation"
+            ],
+            "responses": "You have Dimorphic hemmorhoids(piles). This is a condition affecting the rectal area.<br>Recommended actions:<br>1. Maintain a high-fiber diet to avoid constipation.<br>2. Keep the anal area clean and dry.<br>3. Use over-the-counter creams for relief.<br>4. Consult a doctor for severe cases or bleeding."
+        },
+        {
+            "tag": "Heart attack",
+            "patterns": [
+                "sweating, chest pain, breathlessness, vomiting"
+            ],
+            "responses": "You have Heart attack. This is a life-threatening condition where blood flow to the heart is blocked.<br>Recommended actions:<br>1. Call 911 or seek emergency medical help immediately.<br>2. Chew aspirin if available.<br>3. Stay calm and try to rest.<br>4. Do not drive yourself to the hospital."
+        },
+        {
+            "tag": "Varicose veins",
+            "patterns": [
+                "fatigue, bruising, swollen legs, swollen blood vessels, prominent veins on calf, cramps, obesity"
+            ],
+            "responses": "You have Varicose veins. This is a condition where veins become enlarged and twisted, usually in the legs.<br>Recommended actions:<br>1. Elevate your legs to reduce swelling.<br>2. Wear compression stockings.<br>3. Exercise regularly to improve blood circulation.<br>4. Consult a doctor for possible medical treatments."
+        },
+        {
+            "tag": "Hypothyroidism",
+            "patterns": [
+                "fatigue, abnormal menstruation, cold hands and feets, mood swings, weight gain, dizziness, enlarged thyroid, swollen extremeties, brittle nails, depression, puffy face and eyes, irritability, lethargy"
+            ],
+            "responses": "You have Hypothyroidism. This is a condition where the thyroid gland does not produce enough thyroid hormones.<br>Recommended actions:<br>1. Take thyroid medication as prescribed by your doctor.<br>2. Maintain a balanced diet.<br>3. Exercise regularly to boost metabolism.<br>4. Manage stress and get regular check-ups."
+        },
+        {
+            "tag": "Hyperthyroidism",
+            "patterns": [
+                "sweating, fatigue, fast heart rate, abnormal menstruation, restlessness, weight loss, mood swings, diarrhoea, muscle weakness, irritability, excessive hunger"
+            ],
+            "responses": "You have Hyperthyroidism. This is a condition where the thyroid gland produces too much thyroid hormone.<br>Recommended actions:<br>1. Consult an endocrinologist for treatment options.<br>2. Medication, radioactive iodine, or surgery may be recommended.<br>3. Monitor your thyroid levels regularly.<br>4. Maintain a healthy lifestyle."
+        },
+        {
+            "tag": "Hypoglycemia",
+            "patterns": [
+                "sweating, fatigue, headache, drying and tingling lips, slurred speech, vomiting, anxiety, nausea, blurred and distorted vision, irritability, palpitations, excessive hunger"
+            ],
+            "responses": "You have Hypoglycemia. This is a condition characterized by low blood sugar levels.<br>Recommended actions:<br>1. Consume fast-acting carbohydrates like glucose tablets or juice.<br>2. Follow a balanced diet with regular meals and snacks.<br>3. Carry a medical ID indicating hypoglycemia.<br>4. Consult a healthcare provider for diabetes management if necessary."
+        },
+        {
+            "tag": "Osteoarthristis",
+            "patterns": [
+                "painful walking, hip joint pain, joint pain, neck pain, knee pain, swelling joints"
+            ],
+            "responses": "You have Osteoarthristis. This is a degenerative joint disease that affects cartilage and bone.<br>Recommended actions:<br>1. Manage pain with medication or physical therapy.<br>2. Maintain a healthy weight to reduce stress on joints.<br>3. Stay active with low-impact exercises.<br>4. Consider joint injections or surgery in severe cases."
+        },
+        {
+            "tag": "Arthritis",
+            "patterns": [
+                "painful walking, movement stiffness, muscle weakness, stiff neck, swelling joints"
+            ],
+            "responses": "You have Arthritis. This is a condition that affects the joints.<br>Recommended actions:<br>1. Seek medical advice for proper diagnosis and treatment.<br>2. Follow prescribed medications and therapies.<br>3. Manage pain with recommended treatments.<br>4. Consider lifestyle changes to alleviate symptoms."
+        },
+        {
+            "tag": "Vertigo (Paroxysmal Positional Vertigo)",
+            "patterns": [
+                "spinning movements, headache, vomiting, nausea, unsteadiness, loss of balance"
+            ],
+            "responses": "You have Vertigo (Paroxysmal Positional Vertigo). This is a type of dizziness disorder.<br>Recommended actions:<br>1. Consult a doctor for evaluation and diagnosis.<br>2. Treatment options may include physical therapy and medications.<br>3. Avoid triggers that worsen symptoms.<br>4. Make safety adjustments to prevent falls."
+        },
+        {
+            "tag": "Acne",
+            "patterns": [
+                "blackheads, skin rash, scurring, pus filled pimples"
+            ],
+            "responses": "You have Acne. This is a common skin condition characterized by pimples and skin inflammation.<br>Recommended actions:<br>1. Maintain good skincare hygiene.<br>2. Use acne treatments recommended by a dermatologist.<br>3. Avoid picking or squeezing pimples.<br>4. Consider dietary and lifestyle changes."
+        },
+        {
+            "tag": "Urinary Tract Infection",
+            "patterns": [
+                "bladder discomfort, continuous feel of urine, burning micturition, foul smell of urine"
+            ],
+            "responses": "You have Urinary Tract Infection (UTI). This is a bacterial infection in the urinary system.<br>Recommended actions:<br>1. Consult a doctor for diagnosis and prescription of antibiotics.<br>2. Stay hydrated to flush out bacteria.<br>3. Avoid irritants like caffeine and alcohol.<br>4. Practice good hygiene to prevent future UTIs."
+        },
+        {
+            "tag": "Psoriasis",
+            "patterns": [
+                "inflammatory nails, small dents in nails, skin rash, silver like dusting, skin peeling, joint pain"
+            ],
+            "responses": "You have Psoriasis. This is a chronic skin condition with various symptoms.<br>Recommended actions:<br>1. Consult a dermatologist for proper diagnosis.<br>2. Treatments may include topical medications and phototherapy.<br>3. Moisturize regularly and avoid triggers.<br>4. Manage stress to reduce flare-ups."
+        },
+        {
+            "tag": "Impetigo",
+            "patterns": [
+                "blister, high fever, red sore around nose, yellow crust ooze, skin rash"
+            ],
+            "responses": "You have Impetigo. This is a highly contagious skin infection.<br>Recommended actions:<br>1. Consult a doctor for diagnosis and antibiotic treatment.<br>2. Maintain good hygiene to prevent spreading.<br>3. Avoid close contact with others during infection.<br>4. Follow prescribed medications and creams."
+        },
+        {
+            "tag": "Fungal Infection",
+            "patterns": [
+                "dischromic patches, nodal skin eruptions, skin rash, itching"
+            ],
+            "responses": "You have a Fungal Infection. This can affect the skin and cause various symptoms.<br>Recommended actions:<br>1. Consult a dermatologist for diagnosis and antifungal treatment.<br>2. Keep the affected area clean and dry.<br>3. Avoid tight clothing that can trap moisture.<br>4. Practice good personal hygiene."
+        },
+        {
+            "tag": "GERD (Gastroesophageal Reflux Disease)",
+            "patterns": [
+                "cough, stomach pain, acidity, chest pain, vomiting, ulcers on tongue"
+            ],
+            "responses": "You have GERD (Gastroesophageal Reflux Disease). This is a digestive disorder.<br>Recommended actions:<br>1. Consult a doctor for diagnosis and treatment options.<br>2. Lifestyle changes like diet and weight management may help.<br>3. Medications can provide relief from symptoms.<br>4. Elevate the head of your bed to reduce nighttime reflux."
+        },
+        {
+            "tag": "Chronic Cholestasis",
+            "patterns": [
+                "loss of appetite, itching, abdominal pain, yellowish skin, vomiting, nausea, yellowing of eyes"
+            ],
+            "responses": "You have Chronic Cholestasis. This is a condition affecting the liver and bile ducts.<br>Recommended actions:<br>1. Consult a doctor for diagnosis and treatment.<br>2. Medications may be prescribed to manage symptoms.<br>3. Follow dietary recommendations.<br>4. Monitor liver function regularly."
+        },
+        {
+            "tag": "Chickenpox",
+            "patterns": [
+                "red spots over body, high fever, fatigue, malaise, loss of appetite, headache, skin rash, itching, mild fever, swelled lymph nodes, lethargy"
+            ],
+            "responses": "You have Chickenpox. Chickenpox is a contagious viral infection characterized by an itchy rash.<br>Recommended actions:<br>1. Take antiviral medication (if prescribed).<br>2. Keep the rash clean and avoid scratching.<br>3. Get plenty of rest.<br>4. Stay isolated to prevent spreading the virus."
+        },
+        {
+            "tag": "Dimorphic Hemorrhoids (Piles)",
+            "patterns": [
+                "pain in anal region, irritation in anus, bloody stool, pain during bowel movements, constipation"
+            ],
+            "responses": "You have Dimorphic Hemorrhoids (Piles). Hemorrhoids are swollen veins in the rectum or anus.<br>Recommended actions:<br>1. Maintain a high-fiber diet to prevent constipation.<br>2. Use topical treatments for pain and discomfort.<br>3. Keep the anal area clean.<br>4. Consult a doctor for severe cases."
+        },
+        {
+            "tag": "Heart Attack",
+            "patterns": [
+                "sweating, chest pain, breathlessness, vomiting"
+            ],
+            "responses": "You may be experiencing a heart attack. A heart attack is a serious medical emergency.<br>Recommended actions:<br>1. Call 911 or your local emergency number immediately.<br>2. Chew and swallow an aspirin if you're not allergic.<br>3. Try to stay calm and sit or lie down while waiting for help."
+        },
+        {
+            "tag": "Varicose Veins",
+            "patterns": [
+                "fatigue, bruising, swollen legs, swollen blood vessels, prominent veins on calf, cramps, obesity"
+            ],
+            "responses": "You might have Varicose Veins. Varicose veins are swollen and twisted veins that can be painful.<br>Recommended actions:<br>1. Elevate your legs when resting.<br>2. Wear compression stockings.<br>3. Exercise regularly.<br>4. Consult a doctor for severe symptoms."
+        },
+        {
+            "tag": "Paroxysmal Positional Vertigo",
+            "patterns": [
+                "spinning movements, headache, vomiting, nausea, unsteadiness, loss of balance"
+            ],
+            "responses": "You might be experiencing Paroxysmal Positional Vertigo (Vertigo). It's a type of dizziness that occurs with head movements.<br>Recommended actions:<br>1. Consult a doctor for evaluation and possible vestibular rehabilitation therapy."
+        },
+        {
+            "tag": "Cervical Spondylosis",
+            "patterns": [
+                "dizziness, back pain, weakness in limbs, loss of balance, neck pain"
+            ],
+            "responses": "You have Cervical Spondylosis. This is a condition affecting the neck and spine, leading to symptoms like neck pain and weakness in limbs.<br>Recommended actions:<br>1. Physiotherapy for neck and spine.<br>2. Use neck support devices if advised.<br>3. Maintain good posture.<br>4. Exercise and stretches for neck and back."
+        },
+        {
+            "tag": "Paralysis (Brain Hemorrhage)",
+            "patterns": [
+                "headache, altered sensorium, weakness of one body side, vomiting"
+            ],
+            "responses": "You have Paralysis (Brain Hemorrhage). This is a serious condition characterized by sudden weakness and neurological symptoms.<br>Recommended actions:<br>1. Seek immediate medical attention.<br>2. Follow doctor's recommendations for treatment and rehabilitation."
+        },
+        {
+            "tag": "Chicken Pox",
+            "patterns": [
+                "red spots over body, high fever, fatigue, malaise, loss of appetite, headache, skin rash, itching, mild fever, swelled lymph nodes, lethargy"
+            ],
+            "responses": "You have Chicken Pox. This is a contagious viral infection characterized by an itchy skin rash and flu-like symptoms.<br>Recommended actions:<br>1. Isolate and rest to prevent spreading the virus.<br>2. Keep the skin clean and use soothing lotions.<br>3. Stay hydrated and eat a balanced diet.<br>4. Consult a doctor for severe cases."
+        },
+        {
+            "tag": "(vertigo) Paroymsal  Positional Vertigo",
+            "patterns": [
+                "spinning movements, headache, vomiting, nausea, unsteadiness, loss of balance"
+            ],
+            "responses": "You have (vertigo) Paroymsal  Positional Vertigo. This is a type of vertigo characterized by sudden spinning sensations.<br>Recommended actions:<br>1. Try positional maneuvers to relieve vertigo.<br>2. Avoid sudden head movements.<br>3. Medications may be prescribed by a doctor.<br>4. Consult an ENT specialist for evaluation."
+        },
+        {
+            "tag": "Urinary tract infection",
+            "patterns": [
+                "bladder discomfort, continuous feel of urine, burning micturition, foul smell of urine"
+            ],
+            "responses": "You have a Urinary tract infection. This is an infection that affects the urinary system.<br>Recommended actions:<br>1. Drink plenty of water.<br>2. Take antibiotics as prescribed.<br>3. Maintain good hygiene practices.<br>4. Consult a doctor for further evaluation."
+        },
+        {
+            "tag": "hepatitis A",
+            "patterns": [
+                "muscle pain, loss of appetite, mild fever, diarrhoea, abdominal pain, vomiting, yellowish skin, nausea, joint pain, yellowing of eyes, dark urine"
+            ],
+            "responses": "You have Hepatitis A. Hepatitis A is a viral infection that affects the liver. It can cause jaundice and flu-like symptoms.<br>Recommended actions:<br>1. Get vaccinated if available.<br>2. Rest and stay hydrated.<br>3. Avoid alcohol and certain medications.<br>4. Follow your doctor's advice for recovery."
+        },
+        {
+            "tag": "(Vertigo) Paroxysmal Positional Vertigo",
+            "patterns": [
+                "spinning movements, headache, vomiting, nausea, unsteadiness, loss of balance"
+            ],
+            "responses": "You may have (Vertigo) Paroxysmal Positional Vertigo. It is a type of vertigo characterized by sudden spinning sensations.<br>Recommended actions:<br>1. Consult an ENT specialist or neurologist for evaluation and diagnosis.<br>2. Undergo specific positional maneuvers as advised by the healthcare provider.<br>3. Avoid sudden head movements that trigger symptoms.<br>4. Follow prescribed treatment and exercises."
+        },
+        {
+            "tag": "Vertigo",
+            "patterns": [
+                "spinning movements, headache, vomiting, nausea, unsteadiness, loss of balance"
+            ],
+            "responses": "You have Vertigo (Paroxysmal Positional Vertigo). This is a condition characterized by dizziness and a spinning sensation.<br>Recommended actions:<br>1. Consult a doctor for proper diagnosis and treatment.<br>2. Avoid sudden head movements.<br>3. Try vestibular rehabilitation exercises.<br>4. Medication may be prescribed in some cases."
+        },
+        {
+            "tag": "(vertigo) Paroxysmal Positional Vertigo",
+            "patterns": [
+                "spinning movements, headache, vomiting, nausea, unsteadiness, loss of balance"
+            ],
+            "responses": "You have (Vertigo) Paroxysmal Positional Vertigo. This is a condition characterized by sudden dizziness and loss of balance.<br>Recommended actions:<br>1. Consult an ear, nose, and throat specialist.<br>2. Perform specific head and body movements as advised for symptom relief.<br>3. Avoid sudden head movements.<br>4. Use assistive devices if necessary."
+        },
+        {
+            "tag": "Dizziness",
+            "patterns": [
+                "spinning movements, dizziness, ear pain, vomiting, visual disturbances, nausea, unsteadiness, loss of balance"
+            ],
+            "responses": "You have Dizziness. This is a symptom that can have various underlying causes.<br>Recommended actions:<br>1. Rest in a safe place to prevent falls.<br>2. Stay hydrated.<br>3. Avoid sudden changes in position.<br>4. Consult a doctor to determine the cause of dizziness."
+        },
+        {
+            "tag": "Anemia",
+            "patterns": [
+                "shortness of breath, fast heartbeat, fatigue, cold hands and feets, dizziness, headache, pale skin, irregular menstrual period, poor concentration, brittle nails, weakness"
+            ],
+            "responses": "You have Anemia. This is a condition characterized by a shortage of red blood cells or insufficient hemoglobin to carry oxygen to the body's tissues.<br>Recommended actions:<br>1. Determine and treat the underlying cause of anemia.<br>2. Increase iron intake through diet or supplements.<br>3. Follow a balanced diet rich in vitamins and minerals.<br>4. Consult a hematologist for evaluation and management."
         }
-
-
-
-      ]
+    ]
 }
