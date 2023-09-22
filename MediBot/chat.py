@@ -35,15 +35,19 @@ def get_response(msg):
 
     output = model(X)
     _, predicted = torch.max(output, dim=1)
+    topk_values, topk_indices = torch.topk(output, k=3, dim=1)
 
-    tag = tags[predicted.item()]
+    tag = [tags[i] for i in topk_indices[0]]
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.25:
+    if prob.item() > 0:
+        l = []
         for intent in intents['intents']:
-            if tag == intent["tag"]:
-                return intent['responses']
+            for a in tag:
+                if a == intent["tag"]:
+                    l.append([intent['tag'], intent['responses']])
+        return l
     
     return "I do not understand, Can you Please rephrase the sentence :-)"
 
@@ -58,4 +62,3 @@ if __name__ == "__main__":
 
         resp = get_response(sentence)
         print(resp)
-
